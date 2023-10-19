@@ -63,6 +63,10 @@ h2 {
   font-size: 64px;
 }
 
+h4 {
+  font-size: 40px;
+}
+
 p {
   line-height: 2;
   font-weight: normal;
@@ -97,6 +101,9 @@ p {
   background: rgba(125, 74, 165, 0.37);
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 }
+.btn-branding:hover {
+  color: rgb(99, 93, 93);
+}
 .btn-branding-outline {
   text-align: center;
   line-height: 27px;
@@ -117,6 +124,42 @@ p {
 .project-description {
   padding: 120px 60px 0;
 }
+footer {
+  margin: 60px 0;
+}
+
+footer .contact-box {
+  background-color: var(--secondary-color);
+  padding: 30px 120px;
+  border-radius: 10px;
+}
+
+footer .contact-box p {
+  margin: 0;
+}
+footer .email-link {
+  text-decoration: none;
+  color: black;
+  font-size: 15px;
+  text-align: center;
+}
+footer .email-link:hover {
+  color: var(--branding-color);
+}
+footer .social-links a {
+  margin: 0 20px;
+  color: var(--branding-color);
+  background: var(--secondary-color);
+  padding: 10px 14px;
+  font-size: 15px;
+  border-radius: 50%;
+  transition: all 100ms ease-in-out;
+}
+
+footer .social-links a:hover {
+  color: white;
+  background-color: var(--branding-color);
+}
 
 @media (max-width: 900px) {
   h1 {
@@ -125,11 +168,27 @@ p {
   h2 {
     font-size: 44px;
   }
+
+  h4 {
+    font-size: 18px;
+  }
   .hero {
     padding: 80px 20px;
   }
   .project-description {
     padding: 0;
     text-align: center;
+  }
+
+  footer .contact-box {
+    background-color: var(--secondary-color);
+    padding: 30px;
+    border-radius: 10px;
+  }
+}
+
+@media (min-width: 1400px) {
+  .container {
+    max-width: 1320px;
   }
 }
