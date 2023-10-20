@@ -125,14 +125,13 @@ p {
   margin-top: 20px;
 }
 
-/*
- h5 {
+.hero h5 {
   font-family: var(--heading-font-family);
   font-weight: bold;
   font-size: 35px;
   line-height: 2;
   color: #272142;
-}*/
+}
 .btn-branding {
   color: #fffcfc;
   text-align: center;
